@@ -21,6 +21,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import t4tsi.com.github.fundamentosjetpackcompose.componentes.SimpleOutlinedTextField
+import t4tsi.com.github.fundamentosjetpackcompose.componentes.SimpleTextField
 import t4tsi.com.github.fundamentosjetpackcompose.ui.theme.FundamentosJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,8 +32,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FundamentosJetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    NotificationBage(Modifier.padding(innerPadding))
-                }
+                    SimpleOutlinedTextField(Modifier.padding(innerPadding))                }
             }
         }
     }
