@@ -32,6 +32,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import t4tsi.com.github.fundamentosjetpackcompose.componentes.InitialScreen
 import t4tsi.com.github.fundamentosjetpackcompose.componentes.SimpleOutlinedTextField
 import t4tsi.com.github.fundamentosjetpackcompose.componentes.SimpleTextField
 import t4tsi.com.github.fundamentosjetpackcompose.ui.theme.FundamentosJetpackComposeTheme
@@ -44,7 +45,8 @@ class MainActivity : ComponentActivity() {
             FundamentosJetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     /**SimpleOutlinedTextField(Modifier.padding(innerPadding))**/
-                    CardMensagem(Modifier.padding(innerPadding))
+                    //CardMensagem(Modifier.padding(innerPadding))
+                    InitialScreen(Modifier.padding(innerPadding))
                 }
             }
         }
